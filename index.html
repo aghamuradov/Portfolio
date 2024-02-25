@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Sakhavat Aghamuradov</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/209ee8a052.js" crossorigin="anonymous"></script>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Bilder/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Startseite</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#services">Meine Kenntnisse</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Junior Web Entwickler</p>
+            <h1>Hey, ich bin <span>Sakha</span><br>aus Rostock</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------über mich---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Bilder/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Über mich</h1>
+                <p style="text-align:justify">Mit dem Beginn meines Informatikstudiums an der Universität Rostock im Jahr 2021 setzte ich meinen Weg fort, mein Interesse an der stetigen Entwicklung der Technologie und ihrer weitreichenden Bedeutung in verschiedenen Gesellschaftsbereichen zu vertiefen. Die Möglichkeit, theoretisches Wissen in die Praxis umzusetzen, motivierte mich, die faszinierende Welt der Webentwicklung zu erkunden.</p><br>
+                <p style="text-align:justify">Durch selbstständiges Lernen erwarb ich solide Kenntnisse in HTML, CSS und grundlegendem JavaScript. Die Eigeninitiative, eigene Projekte mit Hingabe umzusetzen, diente nicht nur der Verbesserung meiner Fähigkeiten, sondern ermöglichte es mir auch, Kreativität in meine Arbeit einzubringen. Diese Projekte dienten nicht nur als Lerninstrumente, sondern spiegeln auch meine Leidenschaft und Engagement für die Webentwicklung wider.</p><br>
+                <p style="text-align:justify">Mein Ziel ist es, meine Fähigkeiten in der Gestaltung ansprechender Benutzeroberflächen und funktionaler Webanwendungen kontinuierlich auszubauen. Die Verbindung zwischen maschinenbaulichem Hintergrund und Informatikstudium eröffnet mir die Möglichkeit, innovative Lösungen zu entwickeln, die die Schnittstelle zwischen Technologie und Anwendern optimal gestalten. Ich freue mich darauf, meine Reise in der Welt der Webentwicklung fortzusetzen und durch meine Arbeit einen Beitrag zur fortschreitenden digitalen Transformation zu leisten.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Fähigkeiten</p>
+                    <p class="tab-links" onclick="opentab('experience')">Erfahrung</p>
+                    <p class="tab-links" onclick="opentab('education')">Ausbildung</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML, CSS, und JavaScript</span><br><p>Fundierte Kenntnisse in den grundlegenden Webtechnologien, um strukturierte und ansprechende Benutzeroberflächen zu erstellen. Dies beinhaltet die Verwendung von HTML für die semantische Strukturierung, CSS für das Styling und JavaScript für die Implementierung von Interaktivität.</p></li>
+                        <li><span>Responsive Webdesign</span><br><p>Erfahrung in der Erstellung von Websites, die sich an verschiedene Bildschirmgrößen und Gerätetypen anpassen. Die Verwendung von Flexbox und Grid gehört ebenso zu meinen Fähigkeiten wie die Integration von Media Queries.</p></li>
+                        <li><span>Lernbereitschaft und Eigeninitiative</span><br><p>Die Bereitschaft, kontinuierlich neue Technologien und Trends in der Webentwicklung zu erlernen, sowie die Fähigkeit, eigenständig Lösungen zu finden und sich in neue Herausforderungen einzuarbeiten.</p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><p>Als aufstrebender Junior Webentwickler habe ich meine Fähigkeiten durch intensive Online-Kurse und eigenständiges Lernen entwickelt. Mein Weg zur Webentwicklung begann durch engagierte Teilnahme an verschiedenen Plattformen und Kursen, wo ich fundierte Kenntnisse in verschiedenen Technologien erworben habe.</p></li>
+                        <li><p>Durch Online-Kurse in HTML, CSS und JavaScript konnte ich die Grundlagen der Frontend-Entwicklung erlernen. Ich habe Plattformen wie Codecademy, freeCodeCamp und Udacity genutzt, um mich mit interaktiven Übungen, Projekten und praxisnahen Beispielen vertraut zu machen.</p></li>
+                        <li><p>Die Erweiterung meiner Fähigkeiten auf responsive Webdesign-Techniken erfolgte durch Kurse, die sich auf die Anpassung von Layouts an verschiedene Bildschirmgrößen und Gerätetypen konzentrierten. Flexbox und Grid-Systeme wurden zu meinen Werkzeugen, um effiziente und flexible Designs zu erstellen.</p></li>
+                        <li><p>Die Reise als selbstlernender Junior Webentwickler zeigt meine Hingabe zur kontinuierlichen Verbesserung und meine Fähigkeit, online verfügbare Ressourcen effektiv zu nutzen, um mich in der sich ständig weiterentwickelnden Welt der Webentwicklung zu behaupten.</p></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Seit 2021</span><br>Universität Rostock <span> - Informatik</span></li>
+                        <li><span>2008-2012</span><br>Architektur- und Bauuniversität Aserbaidschan <span> - Maschinenbauingenieur</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------Kenntnisse---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Meine Kenntnisse</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>Als Junior Webentwickler verfüge ich über fundierte Kenntnisse in der Gestaltung von ansprechenden und gut strukturierten Webseiten. Mit HTML habe ich die Grundlage geschaffen, um Inhalte semantisch korrekt zu strukturieren. Mein Verständnis für HTML ermöglicht es mir, effektiv mit Tags wie div, p, ul, und anderen zu arbeiten, um informativen und leicht verständlichen Code zu erstellen. Durch die Beachtung von Best Practices und den Einsatz von HTML5-Elementen bin ich in der Lage, moderne und barrierefreie Webseiten zu entwickeln.</p>
+                <a href="#">Mehr erfahren</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3-alt"></i>
+                <h2>CSS</h2>
+                <p>In Bezug auf CSS bringe ich solide Fähigkeiten mit, um meine HTML-Strukturen zu gestalten und zu stylen. Meine Erfahrung umfasst die Verwendung von Flexbox und Grid, um responsive Designs zu erstellen, die sich verschiedenen Bildschirmgrößen anpassen. Ich setze CSS-Präprozessoren wie Sass ein, um meinen Code effizienter zu organisieren und wiederverwendbare Stile zu erstellen. Mit meinem Verständnis für die Kaskadenreihenfolge und Selektoren kann ich konsistente und ästhetisch ansprechende Benutzeroberflächen gestalten.</p>
+                <a href="#">Mehr erfahren</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JavaScript</h2>
+                <p>Im Bereich JavaScript verfüge ich über grundlegende bis fortgeschrittene Kenntnisse, die es mir ermöglichen, interaktive und dynamische Funktionen in meine Projekte zu integrieren. Ich bin vertraut mit DOM-Manipulation, Ereignisbehandlung und AJAX, um nahtlose Benutzererfahrungen zu schaffen. Mit dem Einsatz von Bibliotheken wie jQuery und modernen Frameworks wie React.js bin ich in der Lage, effizientere und wartungsfreundlichere Codebasen aufzubauen. Meine Fähigkeiten in JavaScript ermöglichen es mir, datengetriebene Anwendungen zu entwickeln und die Benutzeroberfläche durch Animationen und Effekte aufzuwerten.</p>
+                <a href="#">Mehr erfahren</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Meine Projekte</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Bilder/music.jpg">
+                <div class="layer">
+                    <h3>Musik player</h3>
+                    <p>Unser Musikplayer bietet ein immersives Hörerlebnis. Jetzt herunterladen und die Welt der Klänge entdecken.</p>
+                    <a href="./Musik-Player/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Bilder/todo.png">
+                <div class="layer">
+                    <h3>TO-DO List</h3>
+                    <p>Behalte den Überblick über deine Aufgaben mit unserer To-Do Liste. Lade die App jetzt herunter und organisiere deinen Tag effizient.</p>
+                    <a href="./To-Do List/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Taschenrechner/taschenrechner.png">
+                <div class="layer">
+                    <h3>Taschenrechner</h3>
+                    <p>Mein Portfolio enthält ein Taschenrechner-Projekt, bei dem ich einen benutzerfreundlichen Taschenrechner mit innovativen Funktionen und einfacher Bedienung entwickelt habe.</p>
+                    <a href="./Taschenrechner/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">Mehr sehen</a>
+    </div>
+</div>
+<!-- ----------Kontakt------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Kontakt</h1>
+                <p><i class="fa-solid fa-location-dot"></i>Möllner Straße 11, 18109 Rostock</p>
+                <p><i class="fa-solid fa-paper-plane"></i>s.aghamuradov@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>015157406464</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/SakhavatAghamuradov"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/sexa_vet"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/sakhavataghamuradov/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/aghamuradov/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/aghamuradov"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Bilder/Lebenslauf_Sakhavat_Aghamuradov.pdf" download="" class="btn btn2">Lebenslauf</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email" required>
+                    <textarea name="Message" rows="6" placeholder="Nachricht"></textarea>
+                    <button type="submit" class="btn btn2">Einreichen</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024. Erstellt mit <i class="fa-solid fa-heart"></i> von Sakha</p>
+    </div>
+</div>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script >
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzp9-7hHA7K4yHgWmX1XOCSv_-HLL9usDVqxCC_FEUSMLwaL4E-LmthCRQkNJWBhlDw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Nachricht erfolgreich gesendet"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
