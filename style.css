@@ -206,6 +206,8 @@ p:last-child { margin-bottom: 0; }
     display: block; font-size: clamp(2.8rem, 9vw, 7.2rem); font-style: italic;
     background: linear-gradient(90deg, var(--marble) 0%, var(--sunset) 55%, var(--sunset-deep) 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
+    /* Platz für Unterlängen (g) und kursiven Überhang, sonst schneidet background-clip ab */
+    padding: 0 .12em .2em 0; margin-bottom: -.2em; line-height: 1.05;
 }
 .hero-sub { font-size: clamp(1.1rem, 2.2vw, 1.45rem); max-width: 36ch; color: rgba(255, 255, 255, .88); margin-bottom: 2.2rem; min-height: 2.4em; }
 .typed { color: var(--ice); font-weight: 500; border-right: 2px solid var(--sunset); padding-right: 3px; }
